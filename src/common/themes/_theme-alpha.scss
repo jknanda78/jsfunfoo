@@ -1,0 +1,18 @@
+/*
+ * @theme-alpha
+ * @imports: variables
+ * @author: jnanda
+ */
+@import 'variables';
+
+body {
+  background-color: $body-bg-alpha;
+  font-family: $font-alpha;
+}
+
+header {
+  color: $font-color-alpha;
+  h1 {
+    letter-spacing: 0.1em;
+  }
+}

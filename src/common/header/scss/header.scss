@@ -1,0 +1,35 @@
+/*
+ * @header
+ * @author: jnanda
+ */
+@import '../../themes/variables';
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 60px;
+  width: 100%;
+  background-color: $header-bg-alpha;
+
+  h1 {
+    align-self: center;
+    font-size: 1.4em;
+  }
+
+  nav {
+    align-self: center;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+  
+      li {
+        align-self: center;
+        margin: 0 10px;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
