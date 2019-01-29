@@ -1,0 +1,16 @@
+/*
+ * @about
+ * @author: jnanda
+ */
+.profile {
+  font-size: 1.2em;
+  p {
+    padding: 10px 0;
+    line-height: 1.5em;
+
+    &:first-child {
+      font-size: 1.3em;
+    }
+  }
+
+}

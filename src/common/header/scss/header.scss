@@ -2,20 +2,31 @@
  * @header
  * @author: jnanda
  */
-@import '../../themes/variables';
+@import '../../themes/variables-alpha';
 
 header {
   position: fixed;
   display: flex;
   flex-direction: row;
+  align-self: center;
   justify-content: space-around;
-  min-height: 60px;
+  min-height: 70px;
   width: 100%;
   background-color: $header-bg-alpha;
+  z-index: 9999;
 
   h1 {
+    justify-content: flex-start;
     align-self: center;
-    font-size: 1.4em;
+    font-size: 1.5em;
+
+    a {
+      color: $font-color-alpha;
+    }
+
+    span {
+      color: #99b9d6;
+    }
   }
 
   nav {
@@ -29,6 +40,26 @@ header {
         align-self: center;
         margin: 0 10px;
         font-size: 0.9em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    flex-direction: column;
+
+    h1 {
+      padding: 10px 0;
+      font-size: 1.7em;
+    }
+
+    nav {
+      padding: 15px 0;
+      ul {
+        li {
+          font-size: 0.8em;
+        }
       }
     }
   }

@@ -1,0 +1,12 @@
+/*
+ * @layout_mobile
+ * @import: breakpoints
+ * @author: jnanda
+ */
+@import 'breakpoints';
+
+.main-content {
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    .content-box { flex: 1 0 100%; }
+  }
+}

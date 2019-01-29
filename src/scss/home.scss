@@ -1,0 +1,108 @@
+/*
+ * @home
+ * @author: jnanda
+ */
+@import '../common/themes/alpha';
+
+.branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: $bg-branding 0 -20px no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .intro {
+    align-self: center;
+    padding: 30px;
+    opacity: 0.8;
+
+    h2, p {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.8em;
+      border-bottom: 3px solid $intro-border-alpha;
+    }
+
+    p {
+      font-size: 1.1em;
+      letter-spacing: 0.2em;
+      margin-top: 15px;
+    }
+  }
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 50%;
+  justify-content: center;
+  min-height: 550px;
+  width: 100%;
+  background-color: $main-content-bg-alpha;
+
+  &.content {
+    > div {
+      align-self: center;
+      width: 80%;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    p, li {
+      padding: 10px 0;
+      font-size: 1.2em;
+  
+      a {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 0.9em;
+        text-decoration: underline;
+      }
+    }
+    li {
+      list-style-type: square;
+    }
+  }
+
+  &.bg-1 {
+    background: $bg-1 0 0 no-repeat;
+  }
+
+  &.bg-2 {
+    background: $bg-2 0 0 no-repeat;
+  }
+
+  &.bg-1, &.bg-2 {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .branding {
+    .intro {
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .content-box {
+    &.content {
+      h3 {
+        font-size: 1.2em;
+      }
+      p, li {
+        font-size: 1.1em;
+      }
+    }
+  }
+}
